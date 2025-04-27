@@ -1,8 +1,30 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import AnimateButton from "./AnimateButton";
+import RotateMessage from "./RotateMessage";
 
 const StartScreen = () => {
+  const [isPortrait, setIsPortrait] = useState(false);
+
+  useEffect(() => {
+    const checkOrientation = () => {
+      setIsPortrait(window.innerHeight > window.innerWidth);
+    };
+
+    // بررسی اولیه
+    checkOrientation();
+
+    // افزودن event listener برای تغییر orientation
+    window.addEventListener("resize", checkOrientation);
+
+    return () => {
+      window.removeEventListener("resize", checkOrientation);
+    };
+  }, []);
+
   return (
+    <>
+      {isPortrait && <RotateMessage />}
+      
     <div className="h-screen w-screen bg-[#8d57a5] flex flex-col items-center justify-between overflow-hidden p-1  md:p-2">
       <div className="w-full h-3 md:h-6 bg-gradient-to-r from-red-400 via-blue-400 to-green-400 rounded-lg"></div>
 
@@ -34,6 +56,7 @@ const StartScreen = () => {
 
       <div className="w-full h-2 md:h-6 bg-[#cefef4] rounded-full"></div>
     </div>
+    </>
   );
 };
 
