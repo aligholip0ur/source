@@ -1,29 +1,25 @@
 import React, { useState } from "react";
 
-export default function Animatebutton()
-{
-    
+export default function AnimateButton() {
   const [pressed, setPressed] = useState(false);
 
-  const handelclick = () => {
+  const handleClick = () => {
     setPressed(true);
     setTimeout(() => {
       setPressed(false);
     }, 150);
   };
 
-  return(
-    <>
-     <button
-            onClick={handelclick}
-            className={`bg-[#8a5fa5] transition-all duration-150 transform ${
-              pressed ? "scale-90" : "scale-100"
-            } cursor-pointer rounded-2xl border border-black flex items-center justify-center`}
-          >
-            <div className="bg-[#d285cc] pb-5 rounded-2xl border border-black flex items-center justify-center">
-              <div className="bg-[#fcd9f8] w-40 h-40 rounded-xl border border-black shadow-md"></div>
-            </div>
-          </button>
-    </>
-  )
+  return (
+    <button
+      onClick={handleClick}
+      className={`bg-[#8a5fa5] transition-all duration-150 transform ${
+        pressed ? "scale-90" : "scale-100"
+      } cursor-pointer rounded-2xl border border-black flex items-center justify-center w-full h-[15vh] min-h-[80px] max-h-[120px] md:h-[20vh] lg:h-[25vh]`}
+    >
+      <div className="bg-[#d285cc] w-full h-full rounded-2xl border border-black flex items-center justify-center pb-1 sm:pb-2 md:pb-4">
+        <div className="bg-[#fcd9f8] w-full h-full rounded-xl border border-black shadow-md"></div>
+      </div>
+    </button>
+  );
 }
