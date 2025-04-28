@@ -7,3 +7,13 @@
   .animate-spin-slow {
     animation: spin-slow 3s linear infinite;
   }
+
+.use_acsept_radio_Dynamic{
+  aspect-ratio: "8/5";
+}
+
+@media (max-height:"420px") {
+  .use_acsept_radio_Dynamic{
+    aspect-ratio: "1/1";
+  }
+}

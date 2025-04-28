@@ -2,7 +2,7 @@ export default function Footer() {
     return (
       <>
         <div 
-          className="w-full mb-2 mx-auto" 
+          className="w-full mx-auto" 
           style={{
             height: "4%",
             width: "min(90vw, 250vh)", 

@@ -4,12 +4,19 @@ import RotateMessage from "./RotateMessage";
 import MainDiv from "./MainDiv";
 import Header from "./Header";
 import Footer from "./Footer";
+import NotDeviceMessage from "./NotDeviceMessage";
 const StartScreen = () => {
   const [isPortrait, setIsPortrait] = useState(false);
-
+  const [isDevice , setisDevice ] = useState(false);
   useEffect(() => {
     const checkOrientation = () => {
       setIsPortrait(window.innerHeight > window.innerWidth);
+      console.log(window.innerHeight / window.innerWidth);
+      if ((window.innerHeight / window.innerWidth) < 0.3707) {
+        setisDevice(true);
+      } else {
+        setisDevice(false);
+      }
     };
 
     checkOrientation();
@@ -19,22 +26,23 @@ const StartScreen = () => {
       window.removeEventListener("resize", checkOrientation);
     };
   }, []);
-
   return (
-    <>
+    <React.Fragment>
       {isPortrait && <RotateMessage />}
-
+      {isDevice ? <NotDeviceMessage/> : null}
       <div className="fixed inset-0 bg-[#8d57a5] flex flex-col  overflow-hidden">
         <Header />
-        <div className=" flex z-10 items-center  justify-center overflow-hidden ">
+        <div
+          className=" flex z-10 items-center  justify-center overflow-hidden "
+          style={{
+            height: "100%",
+          }}
+        >
           <div
-            className="w-full"
+            className="w-full flex align-middle"
             style={{
               width: "min(90vw, 250vh)",
-              height: "min(50vw,70vh)",
-              aspectRatio: "8/5",
-              maxWidth: "1600px",
-              maxHeight: "850px",
+              height: "94%",
               margin: "20px auto",
             }}
           >
@@ -48,7 +56,7 @@ const StartScreen = () => {
                 </div>
               </div>
 
-              <div className="col-span-8 bg-[#9ca2b8] rounded-xl border-2 border-white relative overflow-hidden flex items-center justify-center p-2">
+              <div className="col-span-8 bg-[#9ca2b8] rounded-xl border-2 border-white relative overflow-hidden flex items-center justify-center p-2 h-full">
                 <MainDiv />
               </div>
 
@@ -65,7 +73,7 @@ const StartScreen = () => {
         </div>
         <Footer />
       </div>
-    </>
+    </React.Fragment>
   );
 };
 
