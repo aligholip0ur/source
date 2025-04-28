@@ -11,12 +11,20 @@ export default function AnimateButton() {
   };
 
   return (
-    <div
-    
-      className={`bg-[#8a5fa5] rounded-2xl border border-black flex items-center justify-center w-full h-[12vw] min-h-[60px] max-h-[150px] aspect-square`}
-    >
-      <button   onClick={handleClick} className={`bg-[#d285cc] cursor-pointer w-full h-full rounded-2xl border border-black flex items-center justify-center transition-all duration-250 transform ${pressed ? "":"pb-1 sm:pb-2 md:pb-4"} `}>
-        <div className="bg-[#fcd9f8] w-full h-full rounded-xl border border-black shadow-md"></div>
+    <div className="w-full" style={{ aspectRatio: "1/1" }}>
+      <button
+        onClick={handleClick}
+        style={{marginTop:"clamp(10px, 4vh, 30px)"}}
+        className="w-full h-[90%] bg-[#8a5fa5] rounded-2xl border border-black flex items-center justify-center transition-all duration-200"
+      >
+        <div className="bg-[#d285cc] w-full h-full rounded-2xl border border-black flex items-center justify-center">
+          <div
+            className="bg-[#fcd9f8] cursor-pointer w-full h-full rounded-xl border border-black shadow-md transition-all duration-200"
+            style={{
+              marginBottom: pressed ? "0" : "clamp(12px, 8vh, 45px)",
+            }}
+          ></div>
+        </div>
       </button>
     </div>
   );
