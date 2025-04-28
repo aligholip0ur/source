@@ -2,9 +2,9 @@ export default function Footer() {
   return(
     <>
   <div 
-  className="w-full  mb-1 mx-auto mt-1" 
+  className="w-full  mb-2 mx-auto " 
   style={{
-    height: "5%",
+    height: "4%",
     width: "90%", 
     maxWidth: "1225px" 
   }}

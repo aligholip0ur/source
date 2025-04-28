@@ -24,14 +24,14 @@ const StartScreen = () => {
     <>
       {isPortrait && <RotateMessage />}
 
-      <div className="fixed inset-0 bg-[#8d57a5] flex flex-col ">
+      <div className="fixed inset-0 bg-[#8d57a5] flex flex-col  overflow-hidden">
         <Header />
         <div className=" flex z-10 items-center  justify-center overflow-hidden ">
           <div
             className="w-full"
             style={{
               width: "min(90vw, 250vh)", 
-              height: "min(56vw,70vh)",
+              height: "min(50vw,70vh)",
               aspectRatio: "8/5",
               maxWidth: "1600px",
               maxHeight: "850px",
@@ -59,9 +59,7 @@ const StartScreen = () => {
                 <div className="w-full mt-auto" style={{ aspectRatio: "1/1" }}>
                   <AnimateButton />
                 </div>
-              
               </div>
-             
             </div>
            
           </div>
