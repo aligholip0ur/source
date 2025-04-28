@@ -1,16 +1,17 @@
 export default function Footer() {
-  return(
-    <>
-  <div 
-  className="w-full  mb-2 mx-auto " 
-  style={{
-    height: "4%",
-    width: "90%", 
-    maxWidth: "1225px" 
-  }}
->
-  <div className="w-full h-full bg-[#cefef4]  rounded-full" />
-</div>
-  </>
-  )
-}
+    return (
+      <>
+        <div 
+          className="w-full mb-2 mx-auto" 
+          style={{
+            height: "4%",
+            width: "min(90vw, 250vh)", 
+            maxWidth: "1600px", 
+            margin: "0 auto", 
+          }}
+        >
+          <div className="w-full h-full bg-[#cefef4] rounded-full" />
+        </div>
+      </>
+    );
+  }

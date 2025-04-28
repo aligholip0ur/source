@@ -30,7 +30,7 @@ const StartScreen = () => {
           <div
             className="w-full"
             style={{
-              width: "min(90vw, 250vh)", 
+              width: "min(90vw, 250vh)",
               height: "min(50vw,70vh)",
               aspectRatio: "8/5",
               maxWidth: "1600px",
@@ -61,12 +61,9 @@ const StartScreen = () => {
                 </div>
               </div>
             </div>
-           
           </div>
-         
         </div>
         <Footer />
-        
       </div>
     </>
   );
