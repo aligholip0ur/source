@@ -1,10 +1,10 @@
 export default function Header() {
   return (
     <>
-      <div className="w-full shrink-0 relative">
+      <div className="w-full relative">
         <img
           src="/Photos/photo18314345291.jpg"
-          alt="Header"ش
+          alt="Header"
           className="w-full h-full object-contain" 
         />
       </div>

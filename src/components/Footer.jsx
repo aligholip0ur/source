@@ -2,14 +2,14 @@ export default function Footer() {
   return(
     <>
   <div 
-  className="w-full shrink-0 mb-2 mx-auto" // margin خودکار برای مرکز کردن
+  className="w-full  mb-1 mx-auto mt-1" 
   style={{
-    height: "clamp(5px, 2.5vh, 30px)",
-    width: "100%", 
+    height: "5%",
+    width: "90%", 
     maxWidth: "1225px" 
   }}
 >
-  <div className="w-full h-full bg-[#cefef4] rounded-full" />
+  <div className="w-full h-full bg-[#cefef4]  rounded-full" />
 </div>
   </>
   )

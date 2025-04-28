@@ -24,22 +24,22 @@ const StartScreen = () => {
     <>
       {isPortrait && <RotateMessage />}
 
-      <div className="fixed inset-0 bg-[#8d57a5] flex flex-col overflow-hidden ">
+      <div className="fixed inset-0 bg-[#8d57a5] flex flex-col ">
         <Header />
-        <div className="min-h-0 flex  items-center  justify-center w-full overflow-hidden py-6">
+        <div className=" flex z-10 items-center  justify-center overflow-hidden ">
           <div
-            className="w-full py-2  my-4"
+            className="w-full"
             style={{
               width: "min(90vw, 250vh)", 
-              height: "min(56vw, 80vh)",
+              height: "min(56vw,70vh)",
               aspectRatio: "8/5",
               maxWidth: "1600px",
-              maxHeight: "1000px",
+              maxHeight: "850px",
               margin: "20px auto",
             }}
           >
-            <div className="grid grid-cols-16 gap-2 md:gap-4 w-full h-full">
-              <div className="col-span-3 bg-[#a47abc] rounded-3xl border-4 border-white flex flex-col p-2 h-full">
+            <div className="grid grid-cols-12 gap-2 md:gap-4 w-full h-full">
+              <div className="col-span-2 bg-[#a47abc] rounded-3xl border-4 border-white flex flex-col p-2 h-full">
                 <div className="w-full" style={{ aspectRatio: "1/1" }}>
                   <AnimateButton />
                 </div>
@@ -48,11 +48,11 @@ const StartScreen = () => {
                 </div>
               </div>
 
-              <div className="col-span-10 bg-[#9ca2b8] rounded-xl border-2 border-white relative overflow-hidden flex items-center justify-center p-2">
+              <div className="col-span-8 bg-[#9ca2b8] rounded-xl border-2 border-white relative overflow-hidden flex items-center justify-center p-2">
                 <MainDiv />
               </div>
 
-              <div className="col-span-3 bg-[#a47abc] rounded-3xl border-2 border-white flex flex-col p-2 h-full">
+              <div className="col-span-2 bg-[#a47abc] rounded-3xl border-4 border-white flex flex-col p-2 h-full">
                 <div className="w-full" style={{ aspectRatio: "1/1" }}>
                   <AnimateButton />
                 </div>
@@ -63,10 +63,12 @@ const StartScreen = () => {
               </div>
              
             </div>
-          
+           
           </div>
+         
         </div>
         <Footer />
+        
       </div>
     </>
   );
