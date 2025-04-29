@@ -40,7 +40,7 @@ const StartScreen = () => {
           }}
         >
           <div
-            className="box  flex align-middle w-[min(68vw,178vh)] lg:!w-[min(80vw,210vh)]"
+            className="box  flex align-middle w-[min(70vw,180vh)] lg:!w-[min(80vw,210vh)]"
             style={{
               height: "90%",
               margin: "20px auto",
