@@ -40,15 +40,15 @@ const StartScreen = () => {
           }}
         >
           <div
-            className="w-full flex align-middle "
+            className="box w-full flex align-middle "
             style={{
-              width: "min(70vw, 260vh)",
+              width:"80%",
               height: "90%",
               margin: "20px auto",
             }}
           >
             <div className="grid grid-cols-12 gap-2 md:gap-4 w-full ">
-            <div className="col-span-2 bg-[#a47abc] rounded-3xl border-4 border-white flex flex-col p-2 sm:aspect-[1/1] md:aspect-[2/5.5] lg:aspect-[2/6] max-h-full w-full">
+            <div className="col-span-2 bg-[#a47abc] rounded-3xl border-4 border-white flex flex-col p-2 sm:aspect-[2/2.5] md:aspect-[2/4.7] lg:aspect-[2/5.3] max-h-full w-full">
                 <div className="w-full" style={{ aspectRatio: "1/1" }}>
                   <AnimateButton />
                 </div>
@@ -57,11 +57,11 @@ const StartScreen = () => {
                 </div>
               </div>
 
-              <div className="col-span-8 bg-[#9ca2b8] rounded-xl border-2 border-white relative overflow-hidden flex   items-center justify-center md:aspect-[8/5] lg:aspect-[8/5.6] sm:aspect-[8/3.6] max-h-full w-full">
+              <div className="col-span-8 bg-[#9ca2b8] rounded-xl border-2 border-white relative overflow-hidden flex   items-center justify-center md:aspect-[8/4.2] lg:aspect-[8/5] sm:aspect-[8/3] max-h-full w-full">
                 <MainDiv />
               </div>
 
-              <div className="col-span-2 bg-[#a47abc] rounded-3xl border-4 border-white flex flex-col p-2 sm:aspect-[1/1] md:aspect-[2/5.5] lg:aspect-[2/6] max-h-full w-full">
+              <div className="col-span-2 bg-[#a47abc] rounded-3xl border-4 border-white flex flex-col p-2 sm:aspect-[2/2.5] md:aspect-[2/4.7] lg:aspect-[2/5.3] max-h-full w-full">
                 <div className="w-full" style={{ aspectRatio: "1/1" }}>
                   <AnimateButton />
                 </div>
