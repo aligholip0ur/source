@@ -7,15 +7,14 @@ import Footer from "./Footer";
 import NotDeviceMessage from "./NotDeviceMessage";
 const StartScreen = () => {
   const [isPortrait, setIsPortrait] = useState(false);
-  const [isDevice , setisDevice ] = useState(false);
+  const [isDevice, setisDevice] = useState(false);
   useEffect(() => {
     const checkOrientation = () => {
       setIsPortrait(window.innerHeight > window.innerWidth);
       console.log(window.innerHeight / window.innerWidth);
-      if ((window.innerHeight / window.innerWidth) < 0.3707) {
+      if (window.innerHeight / window.innerWidth < 0.3707) {
         setisDevice(true);
         console.log(isDevice);
-        
       } else {
         setisDevice(false);
       }
@@ -27,11 +26,11 @@ const StartScreen = () => {
     return () => {
       window.removeEventListener("resize", checkOrientation);
     };
-  },[]);
+  }, []);
   return (
     <React.Fragment>
       {isPortrait && <RotateMessage />}
-      {isDevice ? <NotDeviceMessage/> : null}
+      {isDevice ? <NotDeviceMessage /> : null}
       <div className="fixed inset-0 bg-[#8d57a5] flex flex-col  overflow-hidden">
         <Header />
         <div
@@ -44,12 +43,12 @@ const StartScreen = () => {
             className="w-full flex align-middle"
             style={{
               width: "min(90vw, 240vh)",
-              height: "94%",
-              margin: "20px auto",
+              height: "92%",
+              margin: "0 auto",
             }}
           >
             <div className="grid grid-cols-12 gap-2 md:gap-4 w-full h-full">
-              <div className="col-span-2 bg-[#a47abc] rounded-3xl border-4 border-white flex flex-col p-2 h-full">
+              <div className="col-span-2 bg-[#a47abc] rounded-3xl border-4 border-white flex flex-col p-2 aspect-[2/5.3] max-h-full w-full">
                 <div className="w-full" style={{ aspectRatio: "1/1" }}>
                   <AnimateButton />
                 </div>
@@ -58,11 +57,11 @@ const StartScreen = () => {
                 </div>
               </div>
 
-              <div className="col-span-8 bg-[#9ca2b8] rounded-xl border-2 border-white relative overflow-hidden flex items-center justify-center p-2 h-full">
+              <div className="col-span-8 bg-[#9ca2b8] rounded-xl border-2 border-white relative overflow-hidden flex items-center justify-center aspect-[8/5] max-h-full w-full">
                 <MainDiv />
               </div>
 
-              <div className="col-span-2 bg-[#a47abc] rounded-3xl border-4 border-white flex flex-col p-2 h-full">
+              <div className="col-span-2 bg-[#a47abc] rounded-3xl border-4 border-white flex flex-col p-2 aspect-[2/5.3] max-h-full w-full">
                 <div className="w-full" style={{ aspectRatio: "1/1" }}>
                   <AnimateButton />
                 </div>

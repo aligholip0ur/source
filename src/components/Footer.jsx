@@ -2,7 +2,7 @@ export default function Footer() {
     return (
       <>
         <div 
-          className="w-full mx-auto" 
+          className="w-full mx-auto mt-4" 
           style={{
             height: "4%",
             width: "min(90vw, 240vh)", 
@@ -10,7 +10,7 @@ export default function Footer() {
             margin: "0 auto", 
           }}
         >
-          <div className="w-full h-full bg-[#cefef4] rounded-full" />
+          <div className="w-full h-full bg-[#cefef4] rounded-full " />
         </div>
       </>
     );
