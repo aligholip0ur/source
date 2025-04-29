@@ -14,6 +14,8 @@ const StartScreen = () => {
       console.log(window.innerHeight / window.innerWidth);
       if ((window.innerHeight / window.innerWidth) < 0.3707) {
         setisDevice(true);
+        console.log(isDevice);
+        
       } else {
         setisDevice(false);
       }
@@ -25,7 +27,7 @@ const StartScreen = () => {
     return () => {
       window.removeEventListener("resize", checkOrientation);
     };
-  }, []);
+  },[]);
   return (
     <React.Fragment>
       {isPortrait && <RotateMessage />}
@@ -41,7 +43,7 @@ const StartScreen = () => {
           <div
             className="w-full flex align-middle"
             style={{
-              width: "min(70vw, 210vh)",
+              width: "min(90vw, 240vh)",
               height: "94%",
               margin: "20px auto",
             }}

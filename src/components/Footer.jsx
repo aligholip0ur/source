@@ -5,7 +5,7 @@ export default function Footer() {
           className="w-full mx-auto" 
           style={{
             height: "4%",
-            width: "min(90vw, 250vh)", 
+            width: "min(90vw, 240vh)", 
             maxWidth: "1600px", 
             margin: "0 auto", 
           }}
