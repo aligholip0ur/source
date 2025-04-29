@@ -15,13 +15,13 @@ export default function AnimateButton() {
       <button
         onClick={handleClick}
         style={{marginTop:"clamp(2px, 2vh, 30px)"}}
-        className="w-full h-[90%] bg-[#8a5fa5] rounded-2xl border border-black flex items-center justify-center transition-all duration-200"
+        className="w-full h-[90%] bg-[#8a5fa5] rounded-sm border border-black flex items-center justify-center transition-all duration-200"
       >
-        <div className="bg-[#d285cc] w-full h-full rounded-2xl border border-black flex items-center justify-center">
+        <div className="bg-[#d285cc] w-full h-full rounded-sm border border-black flex items-center justify-center">
           <div
-            className="bg-[#fcd9f8] cursor-pointer w-full h-full rounded-xl border border-black shadow-md transition-all duration-200"
+            className="bg-[#fcd9f8] cursor-pointer w-full h-full rounded-sm border border-black shadow-md transition-all duration-200"
             style={{
-              marginBottom: pressed ? "0" : "clamp(12px, 8vh, 45px)",
+              marginBottom: pressed ? "0" : "clamp(12px, 6vh, 45px)",
             }}
           ></div>
         </div>

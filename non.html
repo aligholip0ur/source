@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>طراحی با نسبت ثابت</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .aspect-8-5 {
+      aspect-ratio: 8 / 5;
+    }
+    .square-btn {
+      aspect-ratio: 1 / 1;
+    }
+  </style>
+</head>
+<body class="bg-purple-800 flex items-center justify-center min-h-screen">
+  <div class="w-full max-w-screen-xl px-4">
+    <div class="relative flex flex-col lg:flex-row justify-center items-center gap-4 lg:gap-8">
+
+      <!-- سمت چپ -->
+      <div class="flex flex-col justify-center gap-4">
+        <div class="square-btn w-20 bg-pink-200 rounded-lg shadow-lg"></div>
+        <div class="square-btn w-20 bg-pink-200 rounded-lg shadow-lg"></div>
+      </div>
+
+      <!-- مستطیل وسط -->
+      <div class="flex-1 w-full max-w-4xl aspect-8-5 bg-gray-300 rounded-xl shadow-xl flex items-center justify-center px-4 text-center">
+        <div class="bg-white p-6 rounded-xl shadow-md text-xl font-bold">
+          هر وقت آماده بودی <br /> یکی از دکمه‌ها رو بزن
+        </div>
+      </div>
+
+      <!-- سمت راست -->
+      <div class="flex flex-col justify-center gap-4">
+        <div class="square-btn w-20 bg-pink-200 rounded-lg shadow-lg"></div>
+        <div class="square-btn w-20 bg-pink-200 rounded-lg shadow-lg"></div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

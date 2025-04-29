@@ -7,14 +7,15 @@ import Footer from "./Footer";
 import NotDeviceMessage from "./NotDeviceMessage";
 const StartScreen = () => {
   const [isPortrait, setIsPortrait] = useState(false);
-  const [isDevice, setisDevice] = useState(false);
+  const [isDevice , setisDevice ] = useState(false);
   useEffect(() => {
     const checkOrientation = () => {
       setIsPortrait(window.innerHeight > window.innerWidth);
       console.log(window.innerHeight / window.innerWidth);
-      if (window.innerHeight / window.innerWidth < 0.3707) {
+      if ((window.innerHeight / window.innerWidth) < 0.3707) {
         setisDevice(true);
         console.log(isDevice);
+        
       } else {
         setisDevice(false);
       }
@@ -26,11 +27,11 @@ const StartScreen = () => {
     return () => {
       window.removeEventListener("resize", checkOrientation);
     };
-  }, []);
+  },[]);
   return (
     <React.Fragment>
       {isPortrait && <RotateMessage />}
-      {isDevice ? <NotDeviceMessage /> : null}
+      {isDevice ? <NotDeviceMessage/> : null}
       <div className="fixed inset-0 bg-[#8d57a5] flex flex-col  overflow-hidden">
         <Header />
         <div
@@ -40,14 +41,14 @@ const StartScreen = () => {
           }}
         >
           <div
-            className="box  flex align-middle w-[min(70vw,180vh)] lg:!w-[min(80vw,210vh)]"
+            className=" flex align-middle  w-[min(80vw,145vh)] box"
             style={{
-              height: "90%",
+              height: "94%",
               margin: "20px auto",
             }}
           >
-            <div className="grid grid-cols-14 gap-2 md:gap-4 w-full ">
-            <div className="col-span-2 bg-[#a47abc] rounded-2xl border-4 border-white flex flex-col p-2 aspect-[2/7] md:aspect-[2/6] lg:aspect-[2/7] max-h-full w-full">
+            <div className="grid grid-cols-12 gap-2 md:gap-4 w-full h-full">
+              <div className="col-span-2 bg-[#a47abc] rounded-3xl border-4 border-white flex flex-col p-2 h-full">
                 <div className="w-full" style={{ aspectRatio: "1/1" }}>
                   <AnimateButton />
                 </div>
@@ -56,11 +57,11 @@ const StartScreen = () => {
                 </div>
               </div>
 
-              <div className="col-span-10 bg-[#9ca2b8] rounded-xl border-2 border-white relative overflow-hidden flex   items-center justify-center md:aspect-[8/4.2] lg:aspect-[8/5] aspect-[8/5] max-h-full w-full">
+              <div className="col-span-8 bg-[#9ca2b8] rounded-xl border-2 border-white relative overflow-hidden flex items-center aspect-[8/5]  justify-center ">
                 <MainDiv />
               </div>
 
-              <div className="col-span-2 bg-[#a47abc] rounded-2xl border-4 border-white flex flex-col p-2 aspect-[2/7] md:aspect-[2/6] lg:aspect-[2/7] max-h-full w-full">
+              <div className="col-span-2 bg-[#a47abc] rounded-3xl border-4 border-white flex flex-col p-2 h-full">
                 <div className="w-full" style={{ aspectRatio: "1/1" }}>
                   <AnimateButton />
                 </div>
@@ -68,7 +69,6 @@ const StartScreen = () => {
                   <AnimateButton />
                 </div>
               </div>
-
             </div>
           </div>
         </div>
