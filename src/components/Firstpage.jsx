@@ -36,18 +36,18 @@ const StartScreen = () => {
         <div
           className=" flex z-10 items-center  justify-center overflow-hidden "
           style={{
-            height: "90%",
+            height: "100%",
           }}
         >
           <div
-            className="box w-full flex align-middle sm:w-[65%] md:w-[80%] lg:w-[86%] "
+            className="box w-full flex align-middle sm:w-[68%] md:w-[85%] lg:w-[90%] "
             style={{
               height: "90%",
               margin: "20px auto",
             }}
           >
-            <div className="grid grid-cols-12 gap-2 md:gap-4 w-full ">
-            <div className="col-span-2 bg-[#a47abc] rounded-3xl border-4 border-white flex flex-col p-2 sm:aspect-[2/2.1] md:aspect-[2/4.7] lg:aspect-[2/5.3] max-h-full w-full">
+            <div className="grid grid-cols-14 gap-2 md:gap-4 w-full ">
+            <div className="col-span-2 bg-[#a47abc] rounded-2xl border-4 border-white flex flex-col p-2 sm:aspect-[1/1] md:aspect-[2/4.7] lg:aspect-[2/6.5] max-h-full w-full">
                 <div className="w-full" style={{ aspectRatio: "1/1" }}>
                   <AnimateButton />
                 </div>
@@ -56,11 +56,11 @@ const StartScreen = () => {
                 </div>
               </div>
 
-              <div className="col-span-8 bg-[#9ca2b8] rounded-xl border-2 border-white relative overflow-hidden flex   items-center justify-center md:aspect-[8/4.2] lg:aspect-[8/5] sm:aspect-[8/2.5] max-h-full w-full">
+              <div className="col-span-10 bg-[#9ca2b8] rounded-xl border-2 border-white relative overflow-hidden flex   items-center justify-center md:aspect-[8/4.2] lg:aspect-[8/5] sm:aspect-[8/2.5] max-h-full w-full">
                 <MainDiv />
               </div>
 
-              <div className="col-span-2 bg-[#a47abc] rounded-3xl border-4 border-white flex flex-col p-2 sm:aspect-[2/2.1] md:aspect-[2/4.7] lg:aspect-[2/5.3] max-h-full w-full">
+              <div className="col-span-2 bg-[#a47abc] rounded-2xl border-4 border-white flex flex-col p-2 sm:aspect-[4/2.8] md:aspect-[2/4.7] lg:aspect-[2/6.5] max-h-full w-full">
                 <div className="w-full" style={{ aspectRatio: "1/1" }}>
                   <AnimateButton />
                 </div>

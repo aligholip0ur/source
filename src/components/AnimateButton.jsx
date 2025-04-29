@@ -14,7 +14,7 @@ export default function AnimateButton() {
     <div className="w-full" style={{ aspectRatio: "1/1" }}>
       <button
         onClick={handleClick}
-        style={{marginTop:"clamp(10px, 4vh, 30px)"}}
+        style={{marginTop:"clamp(2px, 2vh, 30px)"}}
         className="w-full h-[90%] bg-[#8a5fa5] rounded-2xl border border-black flex items-center justify-center transition-all duration-200"
       >
         <div className="bg-[#d285cc] w-full h-full rounded-2xl border border-black flex items-center justify-center">
