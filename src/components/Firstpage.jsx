@@ -42,7 +42,7 @@ const StartScreen = () => {
           <div
             className="w-full flex align-middle"
             style={{
-              width: "min(90vw, 240vh)",
+              width: "min(70vw, 210vh)",
               height: "92%",
               margin: "0 auto",
             }}
