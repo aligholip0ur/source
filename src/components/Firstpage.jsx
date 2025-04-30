@@ -41,7 +41,7 @@ const StartScreen = () => {
           }}
         >
           <div
-            className=" flex align-middle  w-[min(80vw,145vh)] box"
+            className=" flex align-middle  w-[min(90vw,195vh)] box"
             style={{
               height: "94%",
               margin: "20px auto",
@@ -57,7 +57,7 @@ const StartScreen = () => {
                 </div>
               </div>
 
-              <div className="col-span-8 bg-[#9ca2b8] rounded-xl border-2 border-white relative overflow-hidden flex items-center aspect-[8/5]  justify-center ">
+              <div className="col-span-8 bg-[#9ca2b8] rounded-xl border-2 border-white relative overflow-hidden flex items-center  lg:aspect-[8/5]  justify-center ">
                 <MainDiv />
               </div>
 
