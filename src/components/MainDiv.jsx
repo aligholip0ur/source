@@ -12,7 +12,7 @@ export default function MainDiv() {
           className="bg-white w-full h-full rounded-lg border-4 shadow-lg flex flex-col items-center justify-center text-center p-4"
           style={{
             width: "90%",
-            height: "80%",
+            height: "85%",
             padding: "clamp(4px, 1vw, 12px)",
             fontSize: "min(3vw, 6vh, 35px)",
             fontWeight: "bold",
