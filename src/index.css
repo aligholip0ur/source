@@ -1,12 +1,32 @@
 @import "tailwindcss";
+
 @keyframes spin-slow {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
   }
-  
-  @media (width >= 80rem /* 1280px */) {
-  .box{
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* مدیا کوئری برای عرض زیاد */
+@media (min-width: 80rem) {
+  .box {
     width: min(90vw, 200vh);
   }
-  
-}  
+  .box3
+  {
+    width: min(97vw, 207vh);
+  }
+}
+
+/* مدیا کوئری برای ارتفاع کم */
+@media (max-height: 400px) {
+  .box1 {
+    width: min(70vw, 155vh);
+  }
+  .box2
+  {
+    width: min(82vw, 172vh);
+  }
+}
