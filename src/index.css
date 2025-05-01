@@ -26,7 +26,7 @@
   }
   .box3
   {
-    width: min(75vw, 187vh);
+    width: min(74vw, 187vh);
   }
 }
 @media (max-height: 410px) {
@@ -47,21 +47,30 @@
     width: min(83vw, 176vh);
   }
 }
-@media (max-height: 295px) {
+@media (max-height: 302px) {
   .box4 {
-    width: min(60vw, 200vh);
+    width: min(60vw, 150vh);
   }
   .box3
   {
-    width: min(82vw, 150vh);
+    width: min(68vw, 165vh);
+  }
+}
+@media (max-height: 270px) {
+  .box4 {
+    width: min(60vw, 140vh);
+  }
+  .box3
+  {
+    width: min(82vw, 160vh);
   }
 }
 @media (max-height: 230px) {
   .box4 {
-    width: min(68vw, 105vh);
+    width: min(69vw, 105vh);
   }
   .box3
   {
-    width: min(82vw, 122vh);
+    width: min(82vw, 135vh);
   }
 }

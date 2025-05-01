@@ -9,12 +9,12 @@ export default function MainDiv() {
 
       <div className="relative z-10 flex items-center justify-center w-[min(80%,80vh)] h-[min(60%,40vh)]">
         <div
-          className="bg-white w-full h-full rounded-lg border-4 shadow-lg flex flex-col items-center justify-center text-center p-4"
+          className="bg-white w-full h-full rounded-lg border-4  shadow-lg flex flex-col items-center justify-center text-center p-4"
           style={{
-            width: "90%",
-            height: "85%",
+            width: "95%",
+            height: "90%",
             padding: "clamp(4px, 1vw, 12px)",
-            fontSize: "min(3vw, 6vh, 35px)",
+            fontSize: "min(6vw, 5vh, 60px)",
             fontWeight: "bold",
             lineHeight: "1.2",
             overflow: "hidden",
