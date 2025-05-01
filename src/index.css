@@ -16,17 +16,43 @@
   }
   .box3
   {
-    width: min(97vw, 207vh);
+    width: min(94vw, 210vh);
   }
 }
 
-/* مدیا کوئری برای ارتفاع کم */
-@media (max-height: 400px) {
+@media (max-height: 517px) {
   .box1 {
-    width: min(70vw, 155vh);
+    width: min(68vw, 180vh);
   }
-  .box2
+  .box3
   {
-    width: min(82vw, 172vh);
+    width: min(75vw, 187vh);
+  }
+}
+@media (max-height: 400px) {
+  .box4 {
+    width: min(80vw, 170vh);
+  }
+  .box3
+  {
+    width: min(88vw, 183vh);
+  }
+}
+@media (max-height: 360px) {
+  .box4 {
+    width: min(80vw, 160vh);
+  }
+  .box3
+  {
+    width: min(83vw, 176vh);
+  }
+}
+@media (max-height: 239px) {
+  .box4 {
+    width: min(68vw, 100vh);
+  }
+  .box3
+  {
+    width: min(82vw, 122vh);
   }
 }
