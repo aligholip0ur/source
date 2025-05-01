@@ -29,7 +29,7 @@
     width: min(75vw, 187vh);
   }
 }
-@media (max-height: 400px) {
+@media (max-height: 410px) {
   .box4 {
     width: min(80vw, 170vh);
   }
@@ -38,7 +38,7 @@
     width: min(88vw, 183vh);
   }
 }
-@media (max-height: 360px) {
+@media (max-height: 355px) {
   .box4 {
     width: min(80vw, 160vh);
   }
@@ -47,9 +47,18 @@
     width: min(83vw, 176vh);
   }
 }
-@media (max-height: 239px) {
+@media (max-height: 295px) {
   .box4 {
-    width: min(68vw, 100vh);
+    width: min(60vw, 200vh);
+  }
+  .box3
+  {
+    width: min(82vw, 150vh);
+  }
+}
+@media (max-height: 230px) {
+  .box4 {
+    width: min(68vw, 105vh);
   }
   .box3
   {
