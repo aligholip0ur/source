@@ -49,16 +49,16 @@
 }
 @media (max-height: 302px) {
   .box4 {
-    width: min(60vw, 150vh);
+    width: min(58vw, 130vh);
   }
   .box3
   {
-    width: min(68vw, 165vh);
+    width: min(65vw, 160vh);
   }
 }
 @media (max-height: 270px) {
   .box4 {
-    width: min(60vw, 140vh);
+    width: min(58vw, 125vh);
   }
   .box3
   {
