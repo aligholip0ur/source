@@ -14,7 +14,7 @@ export default function MainDiv() {
             width: "95%",
             height: "90%",
             padding: "clamp(4px, 1vw, 12px)",
-            fontSize: "min(6vw, 5vh, 60px)",
+            fontSize: "min(3vw, 5vh, 30px)",
             fontWeight: "bold",
             lineHeight: "1.2",
             overflow: "hidden",
