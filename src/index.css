@@ -9,10 +9,9 @@
   }
 }
 
-/* مدیا کوئری برای عرض زیاد */
-@media screen and (min-width: 80rem) {
-  .box {
-    width: min(90vw, 200vh);
+@media (min-width: 85rem) {
+  .box4 {
+    width: min(90vw, 180vh);
   }
   .box3
   {
@@ -20,36 +19,46 @@
   }
 }
 
-@media (max-height: 520px) {
-  .box1 {
-    width: min(68vw, 175vh);
+@media (max-width: 85rem) {
+  .box4 {
+    width: min(90vw, 150vh);
   }
   .box3
   {
-    width: min(74vw, 187vh);
+    width: min(85vw, 160vh);
   }
 }
-@media screen and (max-height: 410px) {
+
+@media (max-height: 517px) {
   .box4 {
-    width: min(80vw, 170vh);
+    width: min(75vw, 165vh);
   }
   .box3
   {
-    width: min(88vw, 183vh);
+    width: min(74vw, 180vh);
   }
 }
-@media screen and (max-height: 360px) {
+@media (max-height: 400px) {
   .box4 {
-    width: min(80vw, 160vh);
+    width: min(70vw, 155vh);
   }
   .box3
   {
-    width: min(83vw, 176vh);
+    width: min(75vw, 170vh);
   }
 }
-@media (max-height: 306px) {
+@media (max-height: 348px) {
   .box4 {
-    width: min(60vw, 145vh);
+    width: min(65vw, 145vh);
+  }
+  .box3
+  {
+    width: min(70vw, 165vh);
+  }
+}
+@media (max-height: 305px) {
+  .box4 {
+    width: min(58vw, 130vh);
   }
   .box3
   {
@@ -65,9 +74,9 @@
     width: min(82vw, 160vh);
   }
 }
-@media (max-height: 230px) {
+@media (max-height: 242px) {
   .box4 {
-    width: min(69vw, 105vh);
+    width: min(69vw, 100vh);
   }
   .box3
   {
