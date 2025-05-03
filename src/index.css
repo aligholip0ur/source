@@ -20,9 +20,9 @@
   }
 }
 
-@media (max-height: 517px) {
+@media (max-height: 520px) {
   .box1 {
-    width: min(68vw, 180vh);
+    width: min(68vw, 175vh);
   }
   .box3
   {
@@ -38,7 +38,7 @@
     width: min(88vw, 183vh);
   }
 }
-@media (max-height: 355px) {
+@media (max-height: 360px) {
   .box4 {
     width: min(80vw, 160vh);
   }
@@ -47,9 +47,9 @@
     width: min(83vw, 176vh);
   }
 }
-@media (max-height: 302px) {
+@media (max-height: 306px) {
   .box4 {
-    width: min(58vw, 130vh);
+    width: min(60vw, 145vh);
   }
   .box3
   {
